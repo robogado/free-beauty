@@ -1,0 +1,42 @@
+@import url("https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Pattaya&display=swap");
+
+$font_1:'Akaya Kanadaka', cursive;
+$font_2: 'Pattaya', sans-serif; 
+
+#inicio{
+    font-family:$font_1; 
+}
+
+.titulosDeSecciones {
+ font-family: $font_2;
+}
+
+.secciones {
+    font-family: $font_1;
+}
+
+h1, h2, h3, h4 {
+    font-family: $font_1;
+}
+
+.formasDeEnvio {
+    font-family: $font_1;
+}
+
+.quienesSomos__parrafo {
+    font-family:$font_1;
+}
+
+#contenidoDeFormulario {
+    font-family:$font_1;
+}
+
+.ubicacion__parrafo{
+    font-family: $font_1;
+}
+
+.enviosParrafo{
+    font-family: $font_1;
+}
+

@@ -1,0 +1,728 @@
+@import "fuentes";
+@import "colores";
+@import "header";
+@import "variables";
+@import "footer";
+@import "mixins";
+
+
+/**Nav de las paginas**/
+.menuPrincipal {
+    @include flexRow;
+    justify-content: space-around;
+    background-image: linear-gradient(to bottom, $color_lila , $color_violeta_2);
+
+        
+	#inicio{
+        @include flexRow;
+        justify-content: space-around;
+        font-size: 2.5rem;
+        list-style: none;   
+	}
+
+    li{
+        padding: 4px;
+        border-radius: $border-radius+14;
+    }
+
+    .left{
+        margin-left: $margin-left - 40;
+        color:$color_rojo_4;
+        text-shadow:$color_negro 1.5px 1.5px;
+    }
+    
+    .cambiarDeColor{
+        color: $color_rojo_4;
+        text-shadow: $color_negro 1.5px 1.5px;
+    }
+
+}
+
+
+/**Estilo de inicio**/
+#inicio{
+    font-size: 2.188rem;
+    list-style-type: none;
+    text-align: center;
+}
+
+a{
+    text-decoration: none !important;
+}
+
+#inicio{
+ li a:hover {
+    background-color: $color_rosa_4;
+    color: $color_blanco;
+    padding: 4px;
+    border-radius: $border-radius+14; 
+    }
+}
+
+
+/**Menu desplegable**/
+#inicio{
+    li{
+        ul{
+            position: absolute;
+            display: none;
+        }
+    }
+}
+
+#inicio{
+    li:hover ul{
+        @include flexColum;
+        justify-content: flex-start;
+        width: $width+40;
+        list-style-type: none;
+        font-size: 1.563rem;
+        border-radius: $border-radius+14;
+    }
+}
+
+body{
+    background-color: $color_amarillo_claro;
+}
+
+
+/**Colores y estilo de los titulos**/
+h2, h3, h5 {
+    text-align: left;
+    letter-spacing: $letter-spacing+1;
+}
+
+h4, h5 {
+    color: $color_negro;
+}
+
+h1, h2{
+    font-weight: bold;
+}
+
+h1, h2, h3 {
+    text-shadow:$color_negro 1.5px 1.5px;
+}
+
+h1 {
+    color: $color_rosa_1;
+    font-size: 3.125rem;
+    font-style: inherit;
+    text-align: center;
+    letter-spacing: $letter-spacing+1;
+    text-transform: uppercase;
+    animation-duration: 2s;
+    animation-name: aparecer;
+}
+     
+@keyframes aparecer {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+}
+ 
+h2 {
+    color: $color_violeta_1;
+    font-size: 2.188rem;
+}
+
+h3 {
+    color: $color_rosa_1;
+    font-size:1.875rem;
+}
+
+h4{
+    font-size: 1.563rem;
+    text-align: left;
+    letter-spacing: $letter-spacing/2;
+}
+
+.centro{
+    text-align: center;
+}
+
+
+/**Logos de index**/
+.categorias{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: 500px;
+    min-height: 500px;
+    padding: 2px 0px 1px 370px ;
+    border: 50px;
+}
+
+
+/**Titulos de Index, Tienda y Envios**/
+.titulo{
+    padding-top:90px;
+}
+
+
+/**Tienda**/
+.titulosDeSecciones{
+    text-align: center;
+    font-size: 3rem; 
+    letter-spacing: $letter-spacing+1;
+    text-shadow:$color_negro 1.5px 1.5px;
+    padding-top: 50px;   
+}
+
+.secciones{
+    min-height: 100px;
+    max-width: 800px;
+    font-size: 1.25rem; 
+    margin: 0 auto;
+    padding: 30px 10px 30px 10px;
+
+    .precio{
+        margin-top: 5px;
+        padding: 0%;
+    }
+
+    .imagenDeTienda{
+        width: $width+50;
+        height: $height - 300;
+        margin-bottom: 10px;
+        transition: all, 2s;
+    }
+    
+    .imagenDeTienda:hover{
+       height: $height+1; 
+       width: $width+300;
+    }
+    
+    .imagenDeTienda{
+        border-radius: $border-radius*8;
+        box-shadow: 0 8px 8px 0 rojonegro;
+    }
+    
+    
+    .boton {
+        border: none; 
+        min-width: 80px; 
+        height: $height - 450;
+        padding: 0 30px; 
+        color: $color_verde_agua;
+        display: inline-block;
+        border-radius: $border-radius*100;
+        display: inline-flex; 
+        justify-content: space-araund; 
+        align-items: center; 
+        background: $color_rosa_2;
+        transition: 0.3s ease all; 
+        font-size: 1.25rem;
+    }
+    
+      
+    .boton:hover {
+        background: $color_rosa_3;
+        text-decoration: none; 
+    }
+    
+}
+
+
+/**Envios**/
+.carousel img{
+    width: 100% !important;
+    height:100%!important;
+    margin:auto;
+    padding: 10px 50px 50px 90px;
+    max-width: 800px;
+    max-height: 400px;
+    
+}
+
+.titDeEnvios{
+    margin-top: 60px;
+}
+        
+.enviosParrafo{
+    font-size:  1.5rem;
+}
+
+
+/**Nosotros**/
+#imgNosotros{
+    img{
+    display:flex;
+    margin:auto;
+    }
+}
+
+.quienesSomos{
+    max-width: 90%;
+    display: flex;
+    margin: $margin/5;
+    padding: 1px;
+    border: solid 1px;
+
+    .quienesSomos__tit{
+        margin-top: 80px;
+    }
+
+    .quienesSomos__parrafo {
+        color: $color_negro;
+        font-size:  1.5rem;
+        padding: 15px;
+    }
+}
+
+.showroom{
+    display:block;
+    margin: auto;
+    width: $width*4;
+    box-shadow: 3px 3px 3px 3px $color_rojo_3;
+    border-radius: $border-radius*10;
+    margin-left: $margin-left - 90;
+    padding-left: 10px;
+
+  .showroom__tit{
+    text-align: center;
+    text-shadow: $color_negro 1.5px 1.5px;
+  }
+
+  .showroom__img{
+    @include flexRow;
+    justify-content: space-around;
+  }
+
+  .showroom__img--custom{
+    margin-top: 30px;
+    margin-bottom: $margin-bottom+15;
+    border: 2px solid $color_negro
+   }
+
+}
+
+.marcasMasReconocidas{
+    max-width: 90%;
+    display: flex;
+    margin: $margin/5;
+    padding: 1px;
+    justify-content: center; 
+}
+
+
+/**Contacto**/
+.notificaciones {
+    color: $color_azul_acero;
+}
+
+#contenidoDeFormulario{
+    background-image: url(../img/imagencontacto.png);
+    background-repeat: no-repeat;
+}
+
+.categorias{
+    @include flexRow;
+    justify-content: space-between;
+    max-width: 550px;
+    min-height: 600px;
+    padding: 40px 50px 80px 0px;
+}
+
+.leyendaDeFormulario{
+    font-size: 1.875rem;
+    color: $color_violeta_3;
+    font-weight: bold;
+    text-align: left;
+    letter-spacing: $letter-spacing - 1;
+}
+
+.recibirNotificaciones{
+    color:$color_azul_claro;
+}
+
+.notificaciones {
+    color: $color_azul_acero;
+}
+
+.formularioDeContacto{
+    max-width: 32px;
+    font-size:  1.563rem;
+    display:inline;
+    text-align:center;
+    border:2px;
+    margin: $margin - 1;
+    padding: 1px;
+}
+
+.espacioUno{
+    @include flexColum;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+.espacioDos{
+    @include flexColum;
+    flex-wrap: wrap;
+    align-content: center;
+    padding-top:$padding-top*2;
+}
+
+.espacioTres{
+    padding-top: $padding-top - 1;
+}
+
+.ubicacion{
+    padding-left: 400px;
+        
+    .ubicacion__tit{
+        letter-spacing: $letter-spacing - 1;
+        font-size: 2.5rem;
+        color: $color_rojo_1;
+    }
+
+    .ubicacion__parrafo{
+        font-size: 1.25rem;
+    }
+    
+    .ubicacion__imagen{
+        width: $width + 100;
+        height: $height - 200;
+    }
+
+    .ubicacion{
+        img{
+            display: inline-block;
+            margin: 0 auto;
+        }   
+    }
+
+    iframe {
+        box-shadow: 2px 2px 2px 3px $color_rosy_brown;
+    }
+        
+}
+
+
+/**INICIO DE MEDIA Q**/
+
+@media screen and (max-width:2000px){
+    /**Logos de index**/
+    .categorias{
+        margin: 0 auto;
+        min-height: 900px;
+    }
+
+    /**Nosotros**/
+    .showroom{
+        width: 800px;
+        margin-left: 200px;
+    }
+
+}
+
+
+@media screen and (max-width:768px){
+    /**Espacio de Nav**/
+    .left{
+        margin-left: 30px;
+    }
+
+    /**Nosotros**/
+    .showroom{
+        margin-left: 10px;
+        border-radius:10px;
+        max-width:600px;
+        padding-left: 10px;
+    }
+
+    /**Contacto**/
+    .ubicacion{
+        padding-left: 200px;
+
+        .ubicacion__imagen{
+            height: 200px;
+        }
+    }
+
+}
+
+@media screen and (max-width:500px){
+    /**Aspectos generales**/
+    .logoBeauty{
+        width: 200px;
+        height: 200px;
+    }
+    
+    .menuPrincipal{
+        width: auto;
+        
+        #inicio{
+         font-size: 1.25rem;
+         justify-content: space-between;
+        }
+ 
+        .left{
+         margin: 10px;
+        }
+    }
+
+    #inicio{
+        li:hover ul{
+            font-size: 1.25rem;
+            background-color: $color_rosa_2;
+            width: 200px;
+        }
+    }
+
+    h1{
+        font-size:2rem;
+    }
+
+    h2{
+        letter-spacing: 1px;
+        font-size:1.625rem;
+    }
+
+    h3{
+        letter-spacing: 1px;
+        font-size:1.325rem;
+    }
+
+    .titulo{
+        padding-top:10px;
+    }
+
+    /**Footer**/
+    .footer{
+        padding-top: 2px;
+    }
+
+    .footer_container{
+        margin: auto;
+
+        .divRedes{
+            display:none;
+        }
+    }
+
+    /**Logos de index**/
+    .categorias{
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        max-width: 150px;
+        min-height: 100px;
+        padding: 2px 0px 1px 40px;
+        border: 10px;
+        margin-left: 25%;
+
+        .logoIndex{
+            height: 150px;
+            width: 150px;
+        }
+
+    }
+
+    /**Tienda**/
+    .titulosDeSecciones{
+        font-size: 1.75rem; 
+        padding-top: 30px;   
+    }
+
+    .secciones{
+        font-size: 1rem;
+        letter-spacing: 0px;
+    }
+
+    /**Envios**/
+    .titDeEnvios{
+        margin-top:10px;
+
+    }
+
+    /**Nosotros**/
+    .quienesSomos{
+        max-width: 100%;
+        flex-direction:column;
+
+        .quienesSomos__parrafo{
+            font-size: 1.125rem;
+        }
+
+        .quienesSomos__tit {
+            margin-top: 10px;
+            font-size: 1.5rem;
+        }
+    }
+    
+    .showroom{
+        display:none;
+
+        .showroom__img--custom{
+            display:none;
+        }
+    }
+    
+    /**Contacto**/
+    textarea{
+        max-width: 400px;
+    }
+
+    #contenidoDeFormulario{
+        background-image: none;
+    }
+
+    .ubicacion{
+        padding-left: 100px; 
+    }
+
+}
+
+
+@media screen and (max-width:375px){
+
+    /** Aspectos generales**/ 
+    .logoBeauty{
+        width: 200px;
+        height: 200px;
+    }
+    
+   .menuPrincipal{
+       width: auto;
+       
+       #inicio{
+        display: inline-block;
+        letter-spacing: 4px;
+        font-size: 1.25rem;
+       }
+
+       .left{
+        margin: 0 auto;
+        }
+    }
+
+    #inicio{
+        li:hover ul{
+            font-size: 1.25rem;
+            background-color: $color_rosa_2;
+            width: 200px;
+        }
+    }
+
+    h1{
+        font-size:2rem;
+    }
+
+    h2{
+        font-size:1.625rem;
+    }
+
+    h3{
+        font-size:1.325rem;
+    }
+
+    /**Footer**/
+    .footer{
+        padding-top: 2px;
+    }
+
+    .footer_container{
+        margin: auto;
+
+        .divRedes{
+            display:none;
+        }
+    }
+
+    /**Logos de index**/
+    .categorias{
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        max-width: 150px;
+        min-height: 100px;
+        padding: 2px 0px 1px 40px;
+        border: 10px;
+        margin-left: 15%;
+
+        .logoIndex{
+            height: 150px;
+            width: 150px;
+        }
+
+    }
+
+    /**Titulos de Index, Tienda y Envios**/
+    .titulo{
+        padding-top: 10px;
+    }
+    
+    /**Tienda**/
+    .secciones{   
+        margin: 0 auto;
+        max-width: 100%;
+        min-height: 100px;
+        letter-spacing: 0px;
+        font-size: 1rem;
+    }
+
+    .titulosDeSecciones{
+        margin: 10px 50px 0px 0px;
+        font-size: 1.5rem; 
+    }
+
+    /**Envios**/
+    .titDeEnvios{
+        margin-top:10px;
+        
+
+        .enviosParrafo{
+            font-size:1rem;
+        }
+    }
+    
+    /**Nosotros**/
+    .quienesSomos{
+        max-width: 100%;
+        flex-direction:column;
+        margin: 5px;
+
+        .quienesSomos__tit{
+            font-size:1.5rem;
+        }
+
+        .quienesSomos__parrafo{
+            font-size: 1rem;
+        }
+    }
+
+    .showroom{
+        width: 350px;
+        margin-left: 5px;
+
+        .showroom__img--custom{
+            width:250px;
+        }
+    }
+
+    /**Contacto**/
+    #contenidoDeFormulario{
+        background-image: none;
+    }
+
+    textarea{
+        max-width: 304px;
+    }
+
+    .ubicacion{
+        padding-left: 40px; 
+
+        .ubicacion__tit{
+            font-size: 1.625rem;
+
+        }
+    }
+    
+}
+
+/**FIN DEL MEDIA Q**/

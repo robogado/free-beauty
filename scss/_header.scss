@@ -1,0 +1,7 @@
+/**Logo de header**/
+#logoContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(to bottom, $color_lila , $color_violeta_2);
+}

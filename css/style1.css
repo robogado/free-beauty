@@ -1,0 +1,586 @@
+@import url("https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Pattaya&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Pattaya&display=swap");
+#inicio {
+  font-family: "Akaya Kanadaka", cursive; }
+
+.titulosDeSecciones {
+  font-family: "Pattaya", sans-serif; }
+
+.secciones {
+  font-family: "Akaya Kanadaka", cursive; }
+
+h1, h2, h3, h4 {
+  font-family: "Akaya Kanadaka", cursive; }
+
+.formasDeEnvio {
+  font-family: "Akaya Kanadaka", cursive; }
+
+.quienesSomos__parrafo {
+  font-family: "Akaya Kanadaka", cursive; }
+
+#contenidoDeFormulario {
+  font-family: "Akaya Kanadaka", cursive; }
+
+.ubicacion__parrafo {
+  font-family: "Akaya Kanadaka", cursive; }
+
+.enviosParrafo {
+  font-family: "Akaya Kanadaka", cursive; }
+
+/**Logo de header**/
+#logoContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: linear-gradient(to bottom, #e28ced, #95629c); }
+
+/**VARIABLES PARA OPERACIONES**/
+#inicio {
+  font-family: "Akaya Kanadaka", cursive; }
+
+.titulosDeSecciones {
+  font-family: "Pattaya", sans-serif; }
+
+.secciones {
+  font-family: "Akaya Kanadaka", cursive; }
+
+h1, h2, h3, h4 {
+  font-family: "Akaya Kanadaka", cursive; }
+
+.formasDeEnvio {
+  font-family: "Akaya Kanadaka", cursive; }
+
+.quienesSomos__parrafo {
+  font-family: "Akaya Kanadaka", cursive; }
+
+#contenidoDeFormulario {
+  font-family: "Akaya Kanadaka", cursive; }
+
+.ubicacion__parrafo {
+  font-family: "Akaya Kanadaka", cursive; }
+
+.enviosParrafo {
+  font-family: "Akaya Kanadaka", cursive; }
+
+/* FOOTER */
+footer {
+  font-weight: bolder;
+  font-family: "Pattaya", sans-serif;
+  background-image: linear-gradient(to bottom, #e28ced, #95629c);
+  height: 180px;
+  padding-top: 10px; }
+
+.footer_container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  text-align: left;
+  margin-left: 5px; }
+  .footer_container .footer_nav {
+    list-style: none;
+    text-align: left;
+    margin-right: 50%; }
+    .footer_container .footer_nav .footer_nav_enlace {
+      text-decoration: none;
+      color: black; }
+  .footer_container .footer_redes {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    list-style: none;
+    padding-right: 140px;
+    color: black; }
+  .footer_container .footer_pagos {
+    margin-top: 5px;
+    margin: 0 auto; }
+
+/**Nav de las paginas**/
+.menuPrincipal {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  background-image: linear-gradient(to bottom, #e28ced, #95629c); }
+  .menuPrincipal #inicio {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    font-size: 2.5rem;
+    list-style: none; }
+  .menuPrincipal li {
+    padding: 4px;
+    border-radius: 15px; }
+  .menuPrincipal .left {
+    margin-left: 60px;
+    color: #ff8c69;
+    text-shadow: black 1.5px 1.5px; }
+  .menuPrincipal .cambiarDeColor {
+    color: #ff8c69;
+    text-shadow: black 1.5px 1.5px; }
+
+/**Estilo de inicio**/
+#inicio {
+  font-size: 2.188rem;
+  list-style-type: none;
+  text-align: center; }
+
+a {
+  text-decoration: none !important; }
+
+#inicio li a:hover {
+  background-color: #e483cf;
+  color: white;
+  padding: 4px;
+  border-radius: 15px; }
+
+/**Menu desplegable**/
+#inicio li ul {
+  position: absolute;
+  display: none; }
+
+#inicio li:hover ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 240px;
+  list-style-type: none;
+  font-size: 1.563rem;
+  border-radius: 15px; }
+
+body {
+  background-color: cornsilk; }
+
+/**Colores y estilo de los titulos**/
+h2, h3, h5 {
+  text-align: left;
+  letter-spacing: 5px; }
+
+h4, h5 {
+  color: black; }
+
+h1, h2 {
+  font-weight: bold; }
+
+h1, h2, h3 {
+  text-shadow: black 1.5px 1.5px; }
+
+h1 {
+  color: #f54263;
+  font-size: 3.125rem;
+  font-style: inherit;
+  text-align: center;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  animation-duration: 2s;
+  animation-name: aparecer; }
+
+@keyframes aparecer {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+h2 {
+  color: #70194c;
+  font-size: 2.188rem; }
+
+h3 {
+  color: #f54263;
+  font-size: 1.875rem; }
+
+h4 {
+  font-size: 1.563rem;
+  text-align: left;
+  letter-spacing: 2px; }
+
+.centro {
+  text-align: center; }
+
+/**Logos de index**/
+.categorias {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  max-width: 500px;
+  min-height: 500px;
+  padding: 2px 0px 1px 370px;
+  border: 50px; }
+
+/**Titulos de Index, Tienda y Envios**/
+.titulo {
+  padding-top: 90px; }
+
+/**Tienda**/
+.titulosDeSecciones {
+  text-align: center;
+  font-size: 3rem;
+  letter-spacing: 5px;
+  text-shadow: black 1.5px 1.5px;
+  padding-top: 50px; }
+
+.secciones {
+  min-height: 100px;
+  max-width: 800px;
+  font-size: 1.25rem;
+  margin: 0 auto;
+  padding: 30px 10px 30px 10px; }
+  .secciones .precio {
+    margin-top: 5px;
+    padding: 0%; }
+  .secciones .imagenDeTienda {
+    width: 250px;
+    height: 200px;
+    margin-bottom: 10px;
+    transition: all, 2s; }
+  .secciones .imagenDeTienda:hover {
+    height: 501px;
+    width: 500px; }
+  .secciones .imagenDeTienda {
+    border-radius: 8px;
+    box-shadow: 0 8px 8px 0 rojonegro; }
+  .secciones .boton {
+    border: none;
+    min-width: 80px;
+    height: 50px;
+    padding: 0 30px;
+    color: aquamarine;
+    display: inline-block;
+    border-radius: 100px;
+    display: inline-flex;
+    justify-content: space-araund;
+    align-items: center;
+    background: #d6a2bc;
+    transition: 0.3s ease all;
+    font-size: 1.25rem; }
+  .secciones .boton:hover {
+    background: #f598e9;
+    text-decoration: none; }
+
+/**Envios**/
+.carousel img {
+  width: 100% !important;
+  height: 100% !important;
+  margin: auto;
+  padding: 10px 50px 50px 90px;
+  max-width: 800px;
+  max-height: 400px; }
+
+.titDeEnvios {
+  margin-top: 60px; }
+
+.enviosParrafo {
+  font-size: 1.5rem; }
+
+/**Nosotros**/
+#imgNosotros img {
+  display: flex;
+  margin: auto; }
+
+.quienesSomos {
+  max-width: 90%;
+  display: flex;
+  margin: 20px;
+  padding: 1px;
+  border: solid 1px; }
+  .quienesSomos .quienesSomos__tit {
+    margin-top: 80px; }
+  .quienesSomos .quienesSomos__parrafo {
+    color: black;
+    font-size: 1.5rem;
+    padding: 15px; }
+
+.showroom {
+  display: block;
+  margin: auto;
+  width: 800px;
+  box-shadow: 3px 3px 3px 3px #f05454;
+  border-radius: 10px;
+  margin-left: 10px;
+  padding-left: 10px; }
+  .showroom .showroom__tit {
+    text-align: center;
+    text-shadow: black 1.5px 1.5px; }
+  .showroom .showroom__img {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around; }
+  .showroom .showroom__img--custom {
+    margin-top: 30px;
+    margin-bottom: 20px;
+    border: 2px solid black; }
+
+.marcasMasReconocidas {
+  max-width: 90%;
+  display: flex;
+  margin: 20px;
+  padding: 1px;
+  justify-content: center; }
+
+/**Contacto**/
+.notificaciones {
+  color: steelblue; }
+
+#contenidoDeFormulario {
+  background-image: url(../img/imagencontacto.png);
+  background-repeat: no-repeat; }
+
+.categorias {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 550px;
+  min-height: 600px;
+  padding: 40px 50px 80px 0px; }
+
+.leyendaDeFormulario {
+  font-size: 1.875rem;
+  color: #a94aff;
+  font-weight: bold;
+  text-align: left;
+  letter-spacing: 3px; }
+
+.recibirNotificaciones {
+  color: #6c70f5; }
+
+.notificaciones {
+  color: steelblue; }
+
+.formularioDeContacto {
+  max-width: 32px;
+  font-size: 1.563rem;
+  display: inline;
+  text-align: center;
+  border: 2px;
+  margin: 99px;
+  padding: 1px; }
+
+.espacioUno {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center; }
+
+.espacioDos {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+  padding-top: 20px; }
+
+.espacioTres {
+  padding-top: 9px; }
+
+.ubicacion {
+  padding-left: 400px; }
+  .ubicacion .ubicacion__tit {
+    letter-spacing: 3px;
+    font-size: 2.5rem;
+    color: #eb4034; }
+  .ubicacion .ubicacion__parrafo {
+    font-size: 1.25rem; }
+  .ubicacion .ubicacion__imagen {
+    width: 300px;
+    height: 300px; }
+  .ubicacion .ubicacion img {
+    display: inline-block;
+    margin: 0 auto; }
+  .ubicacion iframe {
+    box-shadow: 2px 2px 2px 3px rosybrown; }
+
+/**INICIO DE MEDIA Q**/
+@media screen and (max-width: 2000px) {
+  /**Logos de index**/
+  .categorias {
+    margin: 0 auto;
+    min-height: 900px; }
+  /**Nosotros**/
+  .showroom {
+    width: 800px;
+    margin-left: 200px; } }
+
+@media screen and (max-width: 768px) {
+  /**Espacio de Nav**/
+  .left {
+    margin-left: 30px; }
+  /**Nosotros**/
+  .showroom {
+    margin-left: 10px;
+    border-radius: 10px;
+    max-width: 600px;
+    padding-left: 10px; }
+  /**Contacto**/
+  .ubicacion {
+    padding-left: 200px; }
+    .ubicacion .ubicacion__imagen {
+      height: 200px; } }
+
+@media screen and (max-width: 500px) {
+  /**Aspectos generales**/
+  .logoBeauty {
+    width: 200px;
+    height: 200px; }
+  .menuPrincipal {
+    width: auto; }
+    .menuPrincipal #inicio {
+      font-size: 1.25rem;
+      justify-content: space-between; }
+    .menuPrincipal .left {
+      margin: 10px; }
+  #inicio li:hover ul {
+    font-size: 1.25rem;
+    background-color: #d6a2bc;
+    width: 200px; }
+  h1 {
+    font-size: 2rem; }
+  h2 {
+    letter-spacing: 1px;
+    font-size: 1.625rem; }
+  h3 {
+    letter-spacing: 1px;
+    font-size: 1.325rem; }
+  .titulo {
+    padding-top: 10px; }
+  /**Footer**/
+  .footer {
+    padding-top: 2px; }
+  .footer_container {
+    margin: auto; }
+    .footer_container .divRedes {
+      display: none; }
+  /**Logos de index**/
+  .categorias {
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 150px;
+    min-height: 100px;
+    padding: 2px 0px 1px 40px;
+    border: 10px;
+    margin-left: 25%; }
+    .categorias .logoIndex {
+      height: 150px;
+      width: 150px; }
+  /**Tienda**/
+  .titulosDeSecciones {
+    font-size: 1.75rem;
+    padding-top: 30px; }
+  .secciones {
+    font-size: 1rem;
+    letter-spacing: 0px; }
+  /**Envios**/
+  .titDeEnvios {
+    margin-top: 10px; }
+  /**Nosotros**/
+  .quienesSomos {
+    max-width: 100%;
+    flex-direction: column; }
+    .quienesSomos .quienesSomos__parrafo {
+      font-size: 1.125rem; }
+    .quienesSomos .quienesSomos__tit {
+      margin-top: 10px;
+      font-size: 1.5rem; }
+  .showroom {
+    display: none; }
+    .showroom .showroom__img--custom {
+      display: none; }
+  /**Contacto**/
+  textarea {
+    max-width: 400px; }
+  #contenidoDeFormulario {
+    background-image: none; }
+  .ubicacion {
+    padding-left: 100px; } }
+
+@media screen and (max-width: 375px) {
+  /** Aspectos generales**/
+  .logoBeauty {
+    width: 200px;
+    height: 200px; }
+  .menuPrincipal {
+    width: auto; }
+    .menuPrincipal #inicio {
+      display: inline-block;
+      letter-spacing: 4px;
+      font-size: 1.25rem; }
+    .menuPrincipal .left {
+      margin: 0 auto; }
+  #inicio li:hover ul {
+    font-size: 1.25rem;
+    background-color: #d6a2bc;
+    width: 200px; }
+  h1 {
+    font-size: 2rem; }
+  h2 {
+    font-size: 1.625rem; }
+  h3 {
+    font-size: 1.325rem; }
+  /**Footer**/
+  .footer {
+    padding-top: 2px; }
+  .footer_container {
+    margin: auto; }
+    .footer_container .divRedes {
+      display: none; }
+  /**Logos de index**/
+  .categorias {
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 150px;
+    min-height: 100px;
+    padding: 2px 0px 1px 40px;
+    border: 10px;
+    margin-left: 15%; }
+    .categorias .logoIndex {
+      height: 150px;
+      width: 150px; }
+  /**Titulos de Index, Tienda y Envios**/
+  .titulo {
+    padding-top: 10px; }
+  /**Tienda**/
+  .secciones {
+    margin: 0 auto;
+    max-width: 100%;
+    min-height: 100px;
+    letter-spacing: 0px;
+    font-size: 1rem; }
+  .titulosDeSecciones {
+    margin: 10px 50px 0px 0px;
+    font-size: 1.5rem; }
+  /**Envios**/
+  .titDeEnvios {
+    margin-top: 10px; }
+    .titDeEnvios .enviosParrafo {
+      font-size: 1rem; }
+  /**Nosotros**/
+  .quienesSomos {
+    max-width: 100%;
+    flex-direction: column;
+    margin: 5px; }
+    .quienesSomos .quienesSomos__tit {
+      font-size: 1.5rem; }
+    .quienesSomos .quienesSomos__parrafo {
+      font-size: 1rem; }
+  .showroom {
+    width: 350px;
+    margin-left: 5px; }
+    .showroom .showroom__img--custom {
+      width: 250px; }
+  /**Contacto**/
+  #contenidoDeFormulario {
+    background-image: none; }
+  textarea {
+    max-width: 304px; }
+  .ubicacion {
+    padding-left: 40px; }
+    .ubicacion .ubicacion__tit {
+      font-size: 1.625rem; } }
+
+/**FIN DEL MEDIA Q**/
